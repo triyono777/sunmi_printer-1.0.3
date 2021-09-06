@@ -1,3 +1,8 @@
+# Copied from
+
+https://pub.dev/packages/sunmi_printer
+with added method setFontSize() and setFontBold()
+
 # sunmi_printer
 
 Support Sunmi V2 Pro Label Version and Null Safety.
