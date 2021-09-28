@@ -154,7 +154,8 @@ public class SunmiPrinterPlugin implements FlutterPlugin, MethodCallHandler {
         break;
 
       case "PRINT_COLUMN":
-        String[] stringColumns = call.argument("stringColumns");
+        List<String> list = call.argument("stringColumns");
+        String[] stringColumns = list.toArray(new String[0]);
         int[] columnWidth = call.argument("columnWidth");
         int[] columnAlignment = call.argument("columnAlignment");
         sunmiPrinterMethod.printColumn(stringColumns, columnWidth, columnAlignment);
