@@ -83,13 +83,21 @@ class SunmiPrinter {
     await _channel.invokeMethod("SET_FONT_BOLD", arguments);
   }
 
-  static Future<void> printColumn(List<String> stringColumns, List<Int32List> columnWidth, List<Int32List> columnAlignment) async {
+  static Future<void> printColumn(String textA, String textA) async {
+    Map<String, dynamic> arguments = <String, dynamic>{
+      "textA": textA,
+      "textB": textB,
+    };
+    await _channel.invokeMethod("PRINT_COLUMN", arguments);
+  }
+
+  static Future<void> printColumn(List<String> stringColumns, Int32List columnWidth, Int32List columnAlignment) async {
     Map<String, dynamic> arguments = <String, dynamic>{
       "stringColumns": stringColumns,
       "columnWidth": columnWidth,
       "columnAlignment": columnAlignment,
     };
-    await _channel.invokeMethod("PRINT_COLUMN", arguments);
+    await _channel.invokeMethod("PRINT_COLUMN_LIST", arguments);
   }
 
   /// uint8List format image
