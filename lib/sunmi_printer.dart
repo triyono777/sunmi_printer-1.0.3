@@ -83,7 +83,7 @@ class SunmiPrinter {
     await _channel.invokeMethod("SET_FONT_BOLD", arguments);
   }
 
-  static Future<void> printColumn(String textA, String textA) async {
+  static Future<void> printColumn(String textA, String textB) async {
     Map<String, dynamic> arguments = <String, dynamic>{
       "textA": textA,
       "textB": textB,
