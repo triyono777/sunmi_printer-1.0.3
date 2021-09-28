@@ -1,7 +1,7 @@
 # Copied from
 
 https://pub.dev/packages/sunmi_printer
-with added method setFontSize() and setFontBold()
+with added method setFontSize(), setFontBold(), and printColumn()
 
 # sunmi_printer
 
