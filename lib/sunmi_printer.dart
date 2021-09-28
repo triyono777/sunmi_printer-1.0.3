@@ -83,7 +83,7 @@ class SunmiPrinter {
     await _channel.invokeMethod("SET_FONT_BOLD", arguments);
   }
 
-  static Future<void> printColumn(List<String> stringColumns, List<int> columnWidth, List<int> columnAlignment) async {
+  static Future<void> printColumn(List<String> stringColumns, List<Int32List> columnWidth, List<Int32List> columnAlignment) async {
     Map<String, dynamic> arguments = <String, dynamic>{
       "stringColumns": stringColumns,
       "columnWidth": columnWidth,
