@@ -91,7 +91,7 @@ class SunmiPrinter {
     await _channel.invokeMethod("PRINT_COLUMN", arguments);
   }
 
-  static Future<void> printColumn(List<String> stringColumns, Int32List columnWidth, Int32List columnAlignment) async {
+  static Future<void> printColumnList(List<String> stringColumns, Int32List columnWidth, Int32List columnAlignment) async {
     Map<String, dynamic> arguments = <String, dynamic>{
       "stringColumns": stringColumns,
       "columnWidth": columnWidth,
